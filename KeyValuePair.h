@@ -34,6 +34,6 @@ class KeyValuePair {
 
     //creating constructor
     KeyValuePair();
-}
-
+};
+#include "KeyValuePair.cpp"
 #endif

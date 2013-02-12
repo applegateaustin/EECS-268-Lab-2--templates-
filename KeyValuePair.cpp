@@ -5,7 +5,6 @@
  * File Name: KeyValuePair.cpp
  */
 
-
 //"template<typename Key, typename Value> is telling the fucntion below it is telling you what 'Key' and 'Value' are so that the function is then able to use them.
 //else you would get an error because the function wouldn't know what 'Key' and 'Value' are.
 template<typename Key, typename Value>
@@ -20,7 +19,7 @@ Key KeyValuePair<Key, Value>::getKy() {
 }
 
 //creating a getter function that is goign to return whatever datat type 'Value' is. The name of the function is 'getVal()' which we defined in 'KeyValuePair.h'
-template<typename key, typename Value>
+template<typename Key, typename Value>
 Value KeyValuePair<Key, Value>::getVal() {
   return Val;
 }
@@ -32,7 +31,7 @@ void KeyValuePair<Key, Value>::setKy(Key k) {
 }
 
 //creating setter function that is going to return nothing 'void'. Then name of the function is 'setVal()' which we defined in 'KeyValuePair.h'
-template<typename Key, typename value>
+template<typename Key, typename Value>
 void KeyValuePair<Key, Value>::setVal(Value v) {
   Val = v;
 }

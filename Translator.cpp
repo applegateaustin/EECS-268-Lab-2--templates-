@@ -5,15 +5,15 @@
  * File Name: Translaator.cpp
  */
 
-#include <ifstream>
+#include <fstream>
 #include <string>
+//template<typename Key, typename Value>
+//void Translator<Key, Value>::TranslateMsg(std::ifstream& in) {
 
-class Translator {
-  private:
-    TranslationTable<std::string, int> T1;
-    TranslationTable<int, std::string> T2;
-    void translateMsg(std::ifstream& in);
+//}
 
-  public:
-    Translator(std::ifstream& in)
-};
+//constructor
+template<typename Key, typename Value>
+Translator<Key, Value>::Translator(std::ifstream& in) {
+
+}
