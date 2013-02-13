@@ -4,11 +4,9 @@ int size = 0;
 
 template<typename Key, typename Value>
 TranslationTable<Key, Value>::TranslationTable(std::ifstream& in) {
-  Key tempKey;
-  Value tempValue;
+  std::string tempWord;
   bool firstWord = true;
   int step = 0;
-  std::string tempWord;
 
   while(!in.eof()) {
     //This will get the size of our first array that we need to build and store it in the variable 'size' which is declared as a integer.
@@ -27,12 +25,11 @@ TranslationTable<Key, Value>::TranslationTable(std::ifstream& in) {
     }
 
     // Set the key
-    KyArray[step].setKy(tempKey);
-    in >> tempKey;
+    KyArray[step].setKy(tempWord);
+    in >> tempWord;
 
     // Set the value
-    KyArray[step].setVal(tempValue);
-    in >> tempValue;
+    KyArray[step].setVal(tempWord);
 
     // Increment
     step += 1;
